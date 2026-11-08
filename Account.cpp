@@ -8,6 +8,7 @@ Account::Account(std::string name, double initialBalance)
 
 void Account::addTransaction(const Transaction& transaction) {
     transactions.push_back(transaction);
+    balance += transaction.getAmount();
 }
 
 
