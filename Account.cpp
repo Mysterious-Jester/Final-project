@@ -29,6 +29,7 @@ void Account::displayTransactionHistory() const {
     } else {
         for (size_t i = 0; i < transactions.size(); ++i) {
             std::cout << i + 1 << ". ";
+            transactions[i].displayDetails();
         }
     }
     std::cout << "Current Balance: $" << std::fixed << std::setprecision(2) << balance << "\n";
